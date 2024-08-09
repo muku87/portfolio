@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'M PLUS Rounded 1c', 'Zen Maru Gothic',  sans-serif;
+  line-height: 2;
+}
+
+.wrapper {
+  width: 1000px;
+  background-color: #eef5ee;
+  margin: auto;
+}
+
+.profile {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  padding: 16px;
+  letter-spacing: 2px;
+}
+
+.title {
+  width: 550px;
+  font-weight: 500;
+  margin: auto;
+  padding-bottom: 5px;
+  font-size: 18px;
+  border-bottom: 0.5px solid #777;
+}
+
+.character-text,
+.pr-text,
+.hobby-item p {
+  margin: 50px auto;
+  width: 550px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.character-text a {
+  text-decoration: underline;
+  color: #000;
+  cursor: pointer;
+}
+
+.hobby-item {
+  display: flex;
+  align-items: center;
+}
+
+.hobby-item p {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  height: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #444;
+  font-size: 16px;
+}
+
+a:hover {
+  color: #666;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+/*-------------------------------------------
+  スマホ用
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+
+  .wrapper {
+    width:auto;
+  }
+
+  .profile {
+    font-size: 20px;
+  }
+  
+  .title {
+    width: 300px;
+    font-size: 15px;
+  }
+  
+  .character-text,
+  .pr-text,
+  .hobby-item p {
+    margin: 30px auto;
+    width: 300px;
+    font-size: 14px;
+  }
+  
+  .hobby-item p {
+    text-align: justify;
+  }
+
+  footer a {
+    text-decoration:underline;
+    font-size: 14px;
+  }
+  
+}

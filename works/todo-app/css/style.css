@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kaisei Opti", serif;
+  margin-top: 50px;
+  height: 100%;
+}
+
+button {
+  font-weight: bold;
+}
+
+.wrapper {
+  width: 600px;
+  min-height: 100vh;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #d2b48c;
+  border-radius: 5px;
+}
+
+header {
+  height: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 20px;
+}
+
+form {
+  height: 120px;
+}
+
+.input-text {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  outline: none;
+}
+
+.input-text::placeholder {
+  text-align: center;
+}
+
+.add-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #000;
+  background-color: #cd853f;
+  outline: none;
+  color: #000;
+}
+
+.add-btn:hover,
+.all-delete:hover {
+  background-color: #e6b86f;
+}
+
+.delete-btn {
+  width: 50px;
+  height: 25px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 400px;
+}
+
+.all-delete {
+  width: 60px;
+  height: 30px;
+  padding: 1px;
+  background-color: #cd853f;
+  color: #000;
+  border-radius: 5px;
+  border: 2px solid #000;
+  outline: none;
+  cursor: pointer;
+}
+
+.todos-container {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-list {
+  max-width: 400px;
+  list-style: inside;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.todo-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  padding: 5px;
+  font-size: 14px;
+  border-bottom: 0.5px solid #000;
+}
+
+.doneBtn,
+.deleteBtn {
+  border: 2px solid #000;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 40px;
+  height: 30px;
+  background-color: #eae8d2;
+  color: #000;
+  outline: none;
+}
+
+.doneBtn {
+  margin-right: 5px;
+}
+
+.doneBtn:hover {
+  background-color: #cac98f;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.deleteBtn:hover {
+  background-color: #e6b86f;
+}
+
+/*------------------------------------------
+  スマホ用
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  body {
+    margin-top: 0;
+  }
+
+  button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .wrapper {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .add-btn:hover,
+  .all-delete:hover {
+    background-color: #cd853f;
+  }
+
+  .todos-container {
+    text-align: -webkit-center;
+  }
+
+  .todo-list {
+    margin: auto;
+    width: 370px;
+  }
+
+  .todo-item {
+    width: 370px;
+    font-size: 13px;
+    align-items: center;
+  }
+
+  .delete-btn {
+    margin: 30px auto;
+    position: relative;
+    right: -120px;
+  }
+
+  .doneBtn:hover,
+  .deleteBtn:hover {
+    background-color: #eae8d2;
+  }
+}

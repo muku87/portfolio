@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikiko's Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="./images/profile.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header>
+      <div class="header-inner">
+        <h1 class="header-logo">
+          <a href=".">Mikiko's Portfolio</a>
+        </h1>
+
+        <div class="drawer-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="header-nav">
+          <ul>
+            <li class="header-nav-item">
+              <a href="#about">About</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#works">Works</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#skills">Skills</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+    <!-- /header -->
+
+    <!-- main -->
+    <main>
+      <!-- about -->
+      <section id="about">
+        <h2 class="title">About</h2>
+        <div class="about-inner">
+          <p class="about-img">
+            <img src="./images/profile1.jpg" alt="プロフィール画像" />
+          </p>
+          <div class="about-text">
+            <h3>Mikiko Ono</h3>
+            <p>
+              栃木県出身。<br />
+              現在、野生動物と共存しながらの山奥暮らし。<br />
+              <br />
+            </p>
+            <a class="btn" href="./about/more.html">More →</a>
+          </div>
+        </div>
+      </section>
+      <!-- /about -->
+
+      <!-- works -->
+      <section id="works">
+        <div>
+          <h2 class="title">Works</h2>
+          <div class="works-inner">
+            <a class="works-item" href="./works/todo-app/index.html">
+              <img src="./images/todo-screen.png" alt="ToDoリストアプリ">
+              <div class="works-text">
+                <p class="works-name">ToDoリストアプリ</p>
+                <p class="works-info">HTML/CSS JavaScript</p>
+              </div>
+            </a>
+            <a class="works-item" href="./works/fortune-telling/index.html">
+              <img src="./images/fortune-telling.png" alt="あみくじ占いアプリ">
+              <div class="works-text">
+                <p class="works-name">おみくじ占いアプリ</p>
+                <p class="works-info">HTML/CSS JavaScript</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </section>
+      <!-- /works -->
+
+      <!-- skills -->
+      <section id="skills">
+        <h2 class="title">Skills</h2>
+        <ul class="skills-inner">
+          <li class="skills-contents">
+            <img src="./images/css-file.png" alt="HTML5/CSS" />
+            <div class="skills-info">
+              <div class="skill">
+                <h3 class="skills-name">HTML5/ CSS3</h3>
+                <p id="skills-rank">★★★★★</p>
+              </div>
+              <p class="skills-text">
+                HTML5とCSS3を使用して、Webサイトの構造とデザインを効果的に構築できます。<br>
+                サイトの大まかな構造を理解し、コンテンツの意味に応じたタグを使ってページの構造を整理し、レスポンシブデザインを実装して、ユーザー体験の向上を図っています。<br>
+              </p>
+            </div>
+          </li>
+          <li class="skills-contents">
+            <img src="./images/javascript (1).png" alt="JavaScript">
+            <div class="skills-info">
+              <div class="skill">
+                <h3 class="skills-name">JavaScript</h3>
+                <p id="skills-rank">★★★☆☆</p>
+              </div>
+              <p class="skills-text">
+                jQueryによるコーディングにも対応しており、簡単なアニメーションやインタラクションの実装が可能です。<br>
+                基本的なイベントハンドリングやDOM操作、そして非同期処理（AJAXリクエストなど）についての知識もあります。
+              </p>
+            </div>
+          </li>
+          <li class="skills-contents">
+            <img src="./images/php.png" alt="PHP">
+            <div class="skills-info">
+              <div class="skill">
+                <h3 class="skills-name">PHP</h3>
+                <p id="skills-rank">★★★★☆</p>
+              </div>
+              <p class="skills-text">
+                PHPを使用して、Webアプリケーションのバックエンド開発に従事してきました。<br>
+                Laravelフレームワークを活用した運用保守プロジェクトでは、バリデーション機能の実装やパスワードを伏せるためのコード修正、URL整合性の修正などを行いました。
+              </p>
+            </div>
+          </li>
+          <li class="skills-contents">
+            <img src="./images/ruby.png" alt="Ruby">
+            <div class="skills-info">
+              <div class="skill">
+                <h3 class="skills-name">Ruby</h3>
+                <p id="skills-rank">★★☆☆☆</p>
+              </div>
+              <p class="skills-text">
+                Rubyを使用して、Webアプリケーションのバッグエンド開発に従事してきました。<br>
+                Ruby on Railsフレームワークを活用した運用保守プロジェクトで、文言修正などを行いました。<br>
+                基礎的な文法を理解しています。
+              </p>
+            </div>
+          </li>
+          <li class="skills-contents">
+            <img src="./images/py.png" alt="Python">
+            <div class="skills-info">
+              <div class="skill">
+                <h3 class="skills-name">Python</h3>
+                <p id="skills-rank">★☆☆☆☆</p>
+              </div>
+              <p class="skills-text">
+                Pythonの基礎的な文法を理解しており、シンプルなスクリプトやプログラムを書くことができます。
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- /skills -->
+
+      <!-- TOPへ戻る -->
+      <div class="top-btn">
+        <a href="#"><img src="./images/up-arrow.png" alt="トップページへ戻る">TOPへ</a>
+      </div>
+
+    </main>
+    <!-- /main -->
+
+    <!-- footer -->
+    <footer>
+      <div class="copyright">&copy;2023 Mikiko Ono</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      $('.drawer-btn').on('click', function () {
+        $(this).toggleClass('active');
+        $('.header-nav').toggleClass('active');
+      });
+      $('.header-nav-item').on('click', function () {
+        $('.header-nav').removeClass('active');
+        $('.drawer-btn').removeClass('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
